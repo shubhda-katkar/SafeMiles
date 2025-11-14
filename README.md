@@ -44,7 +44,7 @@ o A voice alert announces:
 4. Alerts work even in background mode 
 Setup Instructions 
 1.Clone the Project 
-git clone https://github.com/YOUR_USERNAME/SafeMiles.git 
+git clone https://github.com/shubhda-katkar/SafeMiles.git 
 2.Open in Android Studio 
 3.Add your google-services.json inside: 
 app/ 
