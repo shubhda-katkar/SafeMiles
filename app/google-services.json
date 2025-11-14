@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "248106447259",
+    "project_id": "safemiles-bf30e",
+    "storage_bucket": "safemiles-bf30e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:248106447259:android:8cc8e6b83582ceb5f5f13e",
+        "android_client_info": {
+          "package_name": "com.example.safemiles"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2gJOiBwTMI5I4JPaXuY7qam_05YHcxAg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

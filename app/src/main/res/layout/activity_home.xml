@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:fillViewport="true"
+    tools:context=".home">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- App Icon -->
+        <ImageView
+            android:id="@+id/appIcon"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:contentDescription="App Icon"
+            android:src="@drawable/icon" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:text="Your Safety, Our Responsibility"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="italic" />
+
+        <!-- Title Bar -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#21318E"
+            android:layout_marginTop="12dp"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="2dp"
+            android:elevation="4dp">
+
+            <!-- App Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SafeMiles"
+                android:textColor="#FFFFFF"
+                android:textSize="26sp"
+                android:layout_centerVertical="true"
+                android:textStyle="bold" />
+
+            <!-- Action Emojis -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:orientation="horizontal"
+                >
+
+                <!-- Settings Emoji -->
+                <TextView
+                    android:id="@+id/settingsEmoji"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="⚙️"
+                    android:textSize="20sp"
+                    android:textColor="#FFFFFF"
+                    android:padding="6dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Settings" />
+
+                <!-- Map Emoji -->
+                <TextView
+                    android:id="@+id/mapEmoji"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="🧭"
+                    android:textSize="20sp"
+                    android:textColor="#FFFFFF"
+                    android:padding="6dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Map" />
+
+                <!-- Dial Emoji -->
+                <TextView
+                    android:id="@+id/dialEmoji"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="📞"
+                    android:textSize="20sp"
+                    android:textColor="#FFFFFF"
+                    android:padding="6dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Dial" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- Car Animation -->
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/carAnimation"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="8dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/car" />
+
+        <!-- Section Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guide"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/title_bg"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp"
+            android:text="Safe Driving Guidelines"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.03" />
+
+        <!-- Guidelines -->
+        <TextView
+            android:id="@+id/guidelines"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="16dp"
+            android:background="@drawable/guidelines_bg"
+            android:elevation="4dp"
+            android:gravity="start"
+            android:lineSpacingExtra="6dp"
+            android:padding="14dp"
+            android:text="• Follow traffic rules\n• Avoid overspeeding\n• Do not use mobile while driving\n• Keep safe distance\n• Follow signals\n• Respect pedestrians and cyclists\n• Avoid overtaking from the wrong side"
+            android:textColor="#2E3F99"
+            android:textSize="16sp"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@drawable/bg_gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Blackspot"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/editNameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:padding="12dp"
+            android:background="#FFFFFF"
+            android:textColor="#000"/>
+
+        <EditText
+            android:id="@+id/editReasonInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Reason"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"
+            android:background="#FFFFFF"
+            android:textColor="#000"/>
+
+        <EditText
+            android:id="@+id/editLatitudeInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Latitude"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"
+            android:background="#FFFFFF"
+            android:textColor="#000"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:id="@+id/editLongitudeInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Longitude"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"
+            android:background="#FFFFFF"
+            android:textColor="#000"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:id="@+id/editRadiusInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Radius"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"
+            android:background="#FFFFFF"
+            android:textColor="#000"
+            android:inputType="number"/>
+
+        <Button
+            android:id="@+id/updateBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Blackspot"
+            android:backgroundTint="#21318E"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="20dp"
+            android:padding="14dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
